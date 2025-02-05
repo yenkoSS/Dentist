@@ -147,20 +147,20 @@ const optionsListItemList = document.querySelectorAll(".options-list-item");
 optionsListItemList.forEach((element) => {
   element.addEventListener("click", (e) => {
     console.log(e.target.textContent);
-    if (e.target.textContent === "Endodonție") {
+    if (e.target.textContent.includes("Endodonție")) {
       console.log("entered endo");
       tablePrices.innerHTML = endoPrices;
     }
 
-    if (e.target.textContent === "Odontologie") {
+    if (e.target.textContent.includes("Odontologie")) {
       tablePrices.innerHTML = odontoPrices;
     }
 
-    if (e.target.textContent === "Ortodonție") {
+    if (e.target.textContent.includes("Ortodonție")) {
       tablePrices.innerHTML = ortoPrices;
     }
 
-    if (e.target.textContent === "Implantologie") {
+    if (e.target.textContent.includes("Implantologie")) {
       tablePrices.innerHTML = implantPrices;
     }
   });
