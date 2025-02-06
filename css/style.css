@@ -28,6 +28,7 @@ html {
   font-family: "Onest", sans-serif;
   font-size: 45%;
   color: #4a4a4a;
+  scroll-behavior: smooth;
 }
 
 .container-fluid {
@@ -247,10 +248,10 @@ nav {
   display: none;
   list-style-type: none;
   text-decoration: none;
-  gap: 4rem;
+  gap: 2rem;
 }
 
-.nav-link {
+.nav-li-large .nav-link {
   text-decoration: none;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -261,9 +262,42 @@ nav {
 }
 
 .nav-li-phone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--blue-dark);
   display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem;
+  list-style-type: none;
+  z-index: 5;
 }
 
+.nav-li-phone .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+}
+
+.icon-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.nav-li-phone .nav-link-phone {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 /* PROGRAM CARD STYLES */
 
 .program-card {
@@ -851,6 +885,10 @@ blockquote {
   .program-card {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .nav-li-large {
+    gap: 4rem;
   }
 }
 

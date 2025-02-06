@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container-fluid">
-      <header>
+      <header id="home">
         <div class="contact-bar">
           <div class="contact-bar-container">
             <div class="contact-box">
@@ -31,49 +31,61 @@
         </div>
         <nav class="nav-header">
           <div class="container nav-container">
-            <a href="#" class="nav-logo-box">
+            <a href="#home" class="nav-logo-box">
               <img class="nav-logo" src="icons/dentistlogo.svg" />
             </a>
             <ul class="nav-li-large">
               <li>
-                <a class="nav-link" href="#"> Despre </a>
+                <a class="nav-link" href="#despre"> Despre</a>
               </li>
               <li>
-                <a class="nav-link" href="#"> Servicii </a>
+                <a class="nav-link" href="#servicii">Servicii</a>
               </li>
               <li>
-                <a class="nav-link" href="#"> Tarife </a>
+                <a class="nav-link" href="#tarife">Tarife</a>
               </li>
               <li>
-                <a class="nav-link" href="#"> Galerie </a>
+                <a class="nav-link" href="#galerie">Galerie</a>
               </li>
               <li>
-                <a class="nav-link" href="#"> Contact </a>
+                <a class="nav-link" href="#pareri">Pareri</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
             <img src="icons/hamburger.svg" alt="" class="icon-menu" />
             <ul class="nav-li-phone">
-              <li>
-                <a class="nav-link" href="#"> Despre </a>
-              </li>
-              <li>
-                <a class="nav-link" href="#"> Servicii </a>
-              </li>
-              <li>
-                <a class="nav-link" href="#"> Tarife </a>
-              </li>
-              <li>
-                <a class="nav-link" href="#"> Galerie </a>
-              </li>
-              <li>
-                <a class="nav-link" href="#"> Contact </a>
-              </li>
+              <img src="icons/close.svg" alt="" class="icon-close" />
+              <div class="wrapper">
+                <li>
+                  <a class="nav-link-phone" href="#home">Acasă </a>
+                </li>
+                <li>
+                  <a class="nav-link-phone" href="#despre">Despre </a>
+                </li>
+                <li>
+                  <a class="nav-link-phone" href="#servicii">Servicii </a>
+                </li>
+                <li>
+                  <a class="nav-link-phone" href="#tarife">Tarife </a>
+                </li>
+                <li>
+                  <a class="nav-link-phone" href="#galerie">Galerie </a>
+                </li>
+                <li>
+                  <a class="nav-link-phone" href="#pareri">Pareri </a>
+                </li>
+                <li>
+                  <a class="nav-link-phone" href="#contact">Contact </a>
+                </li>
+              </div>
             </ul>
           </div>
         </nav>
         <div class="container-header">
           <div
-            class="row d-flex justify-content-center align-items-center"
+            class="row d-flex flex-column flex-lg-row justify-content-center align-items-center"
             style="height: 100%"
           >
             <div
@@ -110,7 +122,7 @@
           </div>
         </div>
       </header>
-      <section class="section-about">
+      <section id="despre" class="section-about">
         <div class="container">
           <div class="row d-flex align-items-center">
             <div
@@ -205,7 +217,7 @@
           </div>
         </div>
       </section>
-      <section class="section-services">
+      <section id="servicii" class="section-services">
         <div class="container">
           <img
             src="icons/dental-care.svg"
@@ -275,7 +287,7 @@
           </div>
         </div>
       </section>
-      <section class="section-prices">
+      <section id="tarife" class="section-prices">
         <div class="container">
           <img src="icons/tooth.svg" alt="" class="icon-section mbot-20" />
           <h3 class="mbot-20">Tarife</h3>
@@ -346,7 +358,7 @@
           </div>
         </div>
       </section>
-      <section class="section-gallery">
+      <section id="galerie" class="section-gallery">
         <div class="container">
           <img src="icons/dentist.svg" alt="" class="icon-section mbot-20" />
           <h3 class="mbot-20">Galerie</h3>
@@ -355,7 +367,7 @@
             stomatologic din Răcădău.
           </h2>
           <p class="mbot-80">
-            Cele mai des întalnite cazuri sunt cele în care este necesară
+            Cel mai des întalnite cazuri sunt cele în care este necesară
             curățarea cariei și reconstrucția dintelui. Totuși, ne-am gândit să
             îți arătăm și câteva cazuri de implant sau ortodonție.
           </p>
@@ -402,7 +414,7 @@
           </div>
         </div>
       </section> -->
-      <section class="section-reviews">
+      <section id="pareri" class="section-reviews">
         <div class="container">
           <img
             src="icons/perfect-teeth.svg"
@@ -458,7 +470,7 @@
           </div>
         </div>
       </section>
-      <section class="section-faq">
+      <section id="intrebari" class="section-faq">
         <div class="container">
           <img
             src="icons/dental-care.svg"
@@ -509,7 +521,7 @@
           </div>
         </div>
       </section>
-      <section class="section-contact">
+      <section id="contact" class="section-contact">
         <div class="container">
           <img src="icons/tooth.svg" alt="" class="icon-section mbot-20" />
           <h3 class="mbot-20">Contactează-ne</h3>
@@ -601,29 +613,31 @@
             <p class="text-footer mbot-30">Navigație</p>
             <div class="wrapper">
               <ul class="nav-list-footer">
-                <li class="nav-footer-item mbot-10">
-                  <a href="" class="nav-footer-link">Acasă</a>
+                <li class="nav-footer-item mbot-20">
+                  <a href="#home" class="nav-footer-link">Acasă</a>
                 </li>
-                <li class="nav-footer-item mbot-10">
-                  <a href="" class="nav-footer-link">Despre</a>
+                <li class="nav-footer-item mbot-20">
+                  <a href="#despre" class="nav-footer-link">Despre</a>
                 </li>
-                <li class="nav-footer-item mbot-10">
-                  <a href="" class="nav-footer-link">Servicii</a>
+                <li class="nav-footer-item mbot-20">
+                  <a href="#servicii" class="nav-footer-link">Servicii</a>
                 </li>
-                <li class="nav-footer-item mbot-10">
-                  <a href="" class="nav-footer-link">Tarife</a>
+                <li class="nav-footer-item mbot-20">
+                  <a href="#tarife" class="nav-footer-link">Tarife</a>
                 </li>
-                <li class="nav-footer-item mbot-10">
-                  <a href="" class="nav-footer-link">Galerie</a>
+                <li class="nav-footer-item mbot-20">
+                  <a href="#galerie" class="nav-footer-link">Galerie</a>
                 </li>
-                <li class="nav-footer-item mbot-10">
-                  <a href="" class="nav-footer-link">Păreri</a>
+                <li class="nav-footer-item mbot-20">
+                  <a href="#pareri" class="nav-footer-link">Păreri</a>
                 </li>
-                <li class="nav-footer-item mbot-10">
-                  <a href="" class="nav-footer-link">Întrebări frecvente</a>
+                <li class="nav-footer-item mbot-20">
+                  <a href="#intrebari" class="nav-footer-link"
+                    >Întrebări frecvente</a
+                  >
                 </li>
                 <li class="nav-footer-item">
-                  <a href="" class="nav-footer-link">Contact</a>
+                  <a href="#contact" class="nav-footer-link">Contact</a>
                 </li>
               </ul>
             </div>

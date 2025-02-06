@@ -165,3 +165,26 @@ optionsListItemList.forEach((element) => {
     }
   });
 });
+
+const iconMenuEl = document.querySelector(".icon-menu");
+const navPhoneEl = document.querySelector(".nav-li-phone");
+const iconCloseEl = document.querySelector(".icon-close");
+iconMenuEl.addEventListener("click", () => {
+  if (navPhoneEl.style.display === "none") {
+    navPhoneEl.style.display = "flex";
+  } else {
+    navPhoneEl.style.display = "none";
+  }
+});
+
+iconCloseEl.addEventListener("click", () => {
+  navPhoneEl.style.display = "none";
+});
+
+const navLiPhoneLinksList = document.querySelectorAll(".nav-link-phone");
+
+navLiPhoneLinksList.forEach((el) => {
+  el.addEventListener("click", () => {
+    navPhoneEl.style.display = "none";
+  });
+});
