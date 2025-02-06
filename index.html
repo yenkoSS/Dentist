@@ -29,7 +29,7 @@
             </div>
           </div>
         </div>
-        <nav>
+        <nav class="nav-header">
           <div class="container nav-container">
             <a href="#" class="nav-logo-box">
               <img class="nav-logo" src="icons/dentistlogo.svg" />
@@ -51,7 +51,7 @@
                 <a class="nav-link" href="#"> Contact </a>
               </li>
             </ul>
-            <img src="icons/dots-menu.svg" alt="" class="icon-menu" />
+            <img src="icons/hamburger.svg" alt="" class="icon-menu" />
             <ul class="nav-li-phone">
               <li>
                 <a class="nav-link" href="#"> Despre </a>
@@ -77,32 +77,33 @@
             style="height: 100%"
           >
             <div
-              class="col-md-10 col-lg-6 d-flex justify-content-center"
-              style="min-height: 50%"
+              class="col-md-10 col-lg-6 d-flex justify-content-center align-items-center"
             >
-              <h1>
-                Cabinet <span class="span1">stomatologic</span>
-                <span class="span2">Uită de durere. Zămbește din plin!</span>
+              <div class="wrapper-header">
+                <h1 class="mbot-40">
+                  Cabinet <span class="span1">stomatologic</span
+                  ><span class="span2">Uită de durere. Zămbește din plin!</span>
+                </h1>
                 <button class="btn-schedule">Programare</button>
                 <button class="btn-services">Servicii</button>
-              </h1>
+              </div>
             </div>
             <div
-              class="col-lg-6 d-flex justify-content-center align-items-center"
+              class="d-none d-md-flex col-lg-6 d-flex justify-content-center align-items-center"
             >
               <div class="program-card">
                 <div class="wrapper-program">
-                  <p class="text-details-program mbot-10">Luni - Vineri</p>
-                  <p class="text-details-hours mbot-20">09:00 - 20:00</p>
+                  <p class="text-details-program">Luni - Vineri</p>
+                  <p class="text-details-hours mbot-10">09:00 - 20:00</p>
                 </div>
 
                 <div class="wrapper-program">
-                  <p class="text-details-program mbot-10">Sambata</p>
-                  <p class="text-details-hours mbot-20">Inchis</p>
+                  <p class="text-details-program">Sambata</p>
+                  <p class="text-details-hours mbot-10">Inchis</p>
                 </div>
                 <div class="wrapper-program">
-                  <p class="text-details-program mbot-10">Duminica</p>
-                  <p class="text-details-hours mbot-20">Inchis</p>
+                  <p class="text-details-program">Duminica</p>
+                  <p class="text-details-hours">Inchis</p>
                 </div>
               </div>
             </div>
@@ -222,7 +223,7 @@
             implanturi.
           </p>
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
               <div class="card-services">
                 <img src="./icons/odonto.svg" alt="" class="icon-services" />
                 <h3 class="mbot-20">Odontologie</h3>
@@ -233,7 +234,7 @@
                 <button class="btn-more">Mai mult</button>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
               <div class="card-services">
                 <img
                   src="./icons/endodontic.svg"
@@ -248,7 +249,7 @@
                 <button class="btn-more">Mai mult</button>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
               <div class="card-services">
                 <img src="./icons/braces.svg" alt="" class="icon-services" />
                 <h3 class="mbot-20">Ortodontie</h3>
@@ -259,7 +260,7 @@
                 <button class="btn-more">Mai mult</button>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
               <div class="card-services">
                 <img src="./icons/implant.svg" alt="" class="icon-services" />
                 <h3 class="mbot-20">Implantologie</h3>
@@ -597,8 +598,8 @@
             </p>
           </div>
           <div class="col-lg-3 d-flex flex-column align-items-center">
+            <p class="text-footer mbot-30">Navigație</p>
             <div class="wrapper">
-              <p class="text-footer mbot-30">Navigație</p>
               <ul class="nav-list-footer">
                 <li class="nav-footer-item mbot-10">
                   <a href="" class="nav-footer-link">Acasă</a>
@@ -628,8 +629,8 @@
             </div>
           </div>
           <div class="col-lg-3 d-flex flex-column align-items-center">
+            <p class="text-footer mbot-30">Servicii</p>
             <div class="wrapper">
-              <p class="text-footer mbot-30">Servicii</p>
               <p class="text-footer-services mbot-10">Endodonție</p>
               <p class="text-footer-services mbot-10">Odontologie</p>
               <p class="text-footer-services mbot-10">Ortodonție</p>
@@ -637,8 +638,8 @@
             </div>
           </div>
           <div class="col-lg-3 d-flex flex-column align-items-center">
+            <p class="text-footer mbot-30">Contact</p>
             <div class="wrapper">
-              <p class="text-footer mbot-30">Contact</p>
               <div class="contact-footer-box mbot-20">
                 <img
                   src="icons/phonefooter.svg"
