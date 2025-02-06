@@ -188,3 +188,21 @@ navLiPhoneLinksList.forEach((el) => {
     navPhoneEl.style.display = "none";
   });
 });
+
+const aboutUsSectionPosition = document
+  .querySelector(".section-about")
+  .getBoundingClientRect().top;
+
+const navHeaderEl = document.querySelector(".nav-header");
+
+window.addEventListener("scroll", () => {
+  console.log(aboutUsSectionPosition);
+  console.log(scrollY);
+  if (scrollY > 700) {
+    navHeaderEl.classList.add("nav-fixed");
+  }
+
+  if (scrollY < 700) {
+    navHeaderEl.classList.remove("nav-fixed");
+  }
+});

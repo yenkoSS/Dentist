@@ -222,8 +222,35 @@ header {
 /* NAVBAR STYLES */
 
 nav {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.144);
   background-color: rgba(255, 255, 255, 0.911);
+}
+
+.nav-fixed {
+  width: 100%;
+  position: fixed;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.973);
+  z-index: 2;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  top: 0;
+  animation-name: showFixedNav;
+  animation-duration: 200ms;
+}
+
+@keyframes showFixedNav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nav-fixed .nav-logo-box {
+  top: 15px;
 }
 
 .nav-container {
@@ -273,6 +300,20 @@ nav {
   padding: 10rem;
   list-style-type: none;
   z-index: 5;
+  animation-name: showNavPhone;
+  animation-duration: 300ms;
+}
+
+@keyframes showNavPhone {
+  from {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .nav-li-phone .wrapper {
@@ -872,7 +913,7 @@ blockquote {
     background-color: white;
     padding: 2rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 0.4rem;
+    border-radius: 1rem;
   }
 
   .nav-logo {
